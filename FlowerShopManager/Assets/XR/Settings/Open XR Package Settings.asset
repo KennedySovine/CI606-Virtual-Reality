@@ -700,8 +700,6 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -7872995405246397647}
-  - {fileID: -4764725301454433242}
   - {fileID: 1443452708213354362}
   - {fileID: -8749980634715080836}
   - {fileID: -1276894210230670667}
@@ -710,6 +708,7 @@ MonoBehaviour:
   - {fileID: 5007098057516315081}
   - {fileID: 1727173055597128861}
   - {fileID: -8732650259347650135}
+  - {fileID: -7872995405246397647}
   - {fileID: 5052632462522514427}
   - {fileID: 4025793028449617705}
   - {fileID: -381482547018402083}
@@ -720,6 +719,7 @@ MonoBehaviour:
   - {fileID: 4135229692886101830}
   - {fileID: 2220871646205782247}
   - {fileID: -2392934293109832829}
+  - {fileID: -4764725301454433242}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -973,14 +973,13 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
-  - {fileID: 6520919279703432591}
-  - {fileID: 3329232291645905076}
   - {fileID: 7558681416710770871}
   - {fileID: -7608755179541951601}
   - {fileID: 3554264124859437666}
   - {fileID: 8968387473496227895}
   - {fileID: -7492839480718335507}
   - {fileID: 9020184986697725232}
+  - {fileID: 6520919279703432591}
   - {fileID: 7497383018830012468}
   - {fileID: 3329205581430312288}
   - {fileID: 7223869130901287869}
@@ -991,6 +990,7 @@ MonoBehaviour:
   - {fileID: -6368128839055358620}
   - {fileID: -7581625304019661375}
   - {fileID: -8372030662033877855}
+  - {fileID: 3329232291645905076}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1726,6 +1726,7 @@ MonoBehaviour:
   - {fileID: 6294113208493117336}
   - {fileID: 7533550220713344692}
   - {fileID: 7583970569112708805}
+  - {fileID: 8402053851759910728}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -2346,12 +2347,12 @@ MonoBehaviour:
   m_Name: HandTracking Metro
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
-  priority: 0
+  nameUi: Hand Tracking Subsystem
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.handtracking
+  openxrExtensionStrings: XR_EXT_hand_tracking
+  company: Unity
+  priority: -100
   required: 0
 --- !u!114 &8638293116830124645
 MonoBehaviour:
