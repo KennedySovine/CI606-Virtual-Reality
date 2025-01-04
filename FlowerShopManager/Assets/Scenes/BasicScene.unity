@@ -7961,6 +7961,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7976356
@@ -8000,10 +8004,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10398,7 +10398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.39
+      value: -10.4
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20824,6 +20824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7976356
@@ -20863,10 +20867,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21790,7 +21790,7 @@ GameObject:
   - component: {fileID: 869882328}
   - component: {fileID: 869882327}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22121,12 +22121,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869882326}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5312, y: 0.4565, z: 10.42}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.877835, y: -0.7955751, z: 9.270262}
   m_LocalScale: {x: 2.5291665, y: 1.3992478, z: 0.056914825}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1242694764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &872716029
 PrefabInstance:
@@ -28806,6 +28806,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7976356
@@ -28845,10 +28849,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30838,6 +30838,7 @@ Transform:
   - {fileID: 1168079673}
   - {fileID: 363399755}
   - {fileID: 1563431340}
+  - {fileID: 869882332}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243369811
@@ -37037,6 +37038,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7976356
@@ -37076,10 +37081,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38021,6 +38022,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7976356
@@ -38060,10 +38065,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39489,6 +39490,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27963516
@@ -39528,10 +39533,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54055,6 +54056,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1242694764}
     m_Modifications:
+    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
+      propertyPath: m_Name
+      value: Vase (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.87563515
@@ -54094,10 +54099,6 @@ PrefabInstance:
     - target: {fileID: 6735626596766147978, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6211044563396280112, guid: 5e39363643778f246b8fb09f38b18052, type: 3}
-      propertyPath: m_Name
-      value: Vase (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56206,11 +56207,10 @@ SceneRoots:
   - {fileID: 299639869}
   - {fileID: 441087506}
   - {fileID: 756192408}
-  - {fileID: 1171357140}
   - {fileID: 2092139010}
+  - {fileID: 1171357140}
   - {fileID: 1706778542}
   - {fileID: 2099243982}
   - {fileID: 474063964}
   - {fileID: 1242694764}
   - {fileID: 194548846}
-  - {fileID: 869882332}
