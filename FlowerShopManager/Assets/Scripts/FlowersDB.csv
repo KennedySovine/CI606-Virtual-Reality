@@ -1,0 +1,120 @@
+Flower Type,Color,Positive Meaning,Negative Meaning,Hypoalergenic,Safe for Pets
+Aster,White,"Innocence, Purity",,FALSE,TRUE
+Aster,Pink,"Love, Sensitivity, Gratitude",,FALSE,TRUE
+Aster,Purple,"Wisdom, Royalty",,FALSE,TRUE
+Aster,Blue,"Trustworthiness, Faithfulness, Calmness, Serentity",,FALSE,TRUE
+Aster,Red,Undying Devotion,,FALSE,TRUE
+Aster,Yellow,"Positivity, Joy",,FALSE,TRUE
+Calla Lily,White,"Magnificent Beauty, Purity, Innocence",,TRUE,TRUE
+Calla Lily,Yellow,"Joy, Growth",,TRUE,TRUE
+Calla Lily,Pink,"Admiration, Appreciation",,TRUE,TRUE
+Calla Lily,Red,"Passion, intense love",,TRUE,TRUE
+Calla Lily,Purple,"Charm, Warmth",,TRUE,TRUE
+Calla Lily,Black,"Elegance, Mystery",Sadness,TRUE,TRUE
+Carnations,White,"Innocent, pure soul; devotion, luck",,TRUE,
+Carnations,Red,"Strong passion, admiration",,TRUE,FALSE
+Carnations,Purple,Volatility of human emotions,,TRUE,FALSE
+Carnations,Pink,Mother's unyielding love,,TRUE,FALSE
+Carnations,Yellow,"Joy, Friendship","Disdain, Rejection",TRUE,FALSE
+Carnations,Orange,"Fascination, enthusiasm",,TRUE,FALSE
+Carnations,Green,Good fortune,,TRUE,FALSE
+Lily,White,Purity,,FALSE,FALSE
+Lily,Pink,"Admiration, Gratitude, Joy",,FALSE,FALSE
+Lily,Red,Fiery Passion,Jealousy,FALSE,FALSE
+Lily,Orange,"Energy, Enthusiasm, Zest for Life",,FALSE,FALSE
+Lily,Yellow,"Friendship, Joy","Gaiety, Falsehood",FALSE,FALSE
+Lily,Purple,"Royalty, Success",Pride,FALSE,FALSE
+Lily,Green,"Harmony, Renewal",,FALSE,FALSE
+Chrysanthemum,White,"Crystal Purity, Honesty",,FALSE,FALSE
+Chrysanthemum,Pink,"Adoration, fascination, warm feelings",,FALSE,FALSE
+Chrysanthemum,Red,"Unrelenting love, deep passion",,FALSE,FALSE
+Chrysanthemum,Orange,"Energy, Enthusiasm",,FALSE,FALSE
+Chrysanthemum,Purple,"Stunning royalty, Luxury",,FALSE,FALSE
+Chrysanthemum,Blue,"Mystery, Look of Unnatainable",,FALSE,FALSE
+Chrysanthemum,Green,Virtuous life and growth,,FALSE,FALSE
+Chrysanthemum,Yellow,"Friendship bonds, happiness experienced together",,FALSE,FALSE
+Dahlia,Red,"Strength, Power",,FALSE,FALSE
+Dahlia,"Pink, Purple","Grace, Kindness, Beauty",,FALSE,FALSE
+Dahlia,Purple,Royalty,,FALSE,FALSE
+Dahlia,"Yellow, Orange","Cheerful, joy, excitement",,FALSE,FALSE
+Dahlia,White,"Purity, Innocence, Rebirth",,FALSE,FALSE
+Dahlia,Green,"New beginnings, Change",,FALSE,FALSE
+Dahlia,Black,,"betrayal, sadness",FALSE,FALSE
+Daffodil,Any Color,"Rebirth, New Beginnings",,TRUE,FALSE
+Gerbera Daisy,Yellow,"Cheerfulness, Celebration",,FALSE,TRUE
+Gerbera Daisy,Red,"Unconcious love, immersed in love",,FALSE,TRUE
+Gerbera Daisy,Pink,"admiration, adoration, high esteem",,FALSE,TRUE
+Gerbera Daisy,White,"purity, child-like innocence",,FALSE,TRUE
+Freesia,White,"purity, innocence",,FALSE,TRUE
+Freesia,Red,"Heat, passion, passionate love",,FALSE,TRUE
+Freesia,Purple,"Beauty, Royalty",,FALSE,TRUE
+Freesia,Pink,"Femininity, love",,FALSE,TRUE
+Freesia,Yellow,"Friendship, happiness, optimism",,FALSE,TRUE
+Hydrangea,Blue,"Apology, gratitude, understanding",,TRUE,FALSE
+Hydrangea,White,"Purity, Grace",,TRUE,FALSE
+Hydrangea,Pink,"Romance, true feelings, sincere emotions",,TRUE,FALSE
+Hydrangea,Purple,"Pride, Royalty",,TRUE,FALSE
+Iris,Purple,"Royalty, Respect, Knowledge",,TRUE,FALSE
+Iris,White,"Purity, Humility, Patience",,TRUE,FALSE
+Iris,Orange,"Bravery, Exuberance",,TRUE,FALSE
+Iris,Black,"Honor, Pride, Change",,TRUE,FALSE
+Iris,Red,"Passion, love, romance",,TRUE,FALSE
+Iris,Pink,"Love, passion, deep bonding",,TRUE,FALSE
+Iris,Blue,"Faith, devotion, trust",,TRUE,FALSE
+Iris,Yellow,"Passion, friendship",,TRUE,FALSE
+Lilac,White,"purity, innocence",,FALSE,FALSE
+Lilac,Purple,spirituality,,FALSE,FALSE
+Lilac,Lavender,"Love, passion",,FALSE,FALSE
+Lilac,Blue,"Happiness, Tranquility",,FALSE,FALSE
+Lavender,Lavender,"Feminity, gentleness, tranquility, elegence","Indecisive, impractical, childish",TRUE,FALSE
+Lily,White,"Purity, Innocence",,FALSE,FALSE
+Lily,Red,"Passion, love, desire, romance",Jealousy,FALSE,FALSE
+Lily,Yellow,"Happiness, gratitude, good health",,FALSE,FALSE
+Lily,Pink,"Femininity, grace, prosperity, abundance",,FALSE,FALSE
+Lily,Orange,"Happiness, Warmth",,FALSE,FALSE
+Orchid,White,"Purity, innocence",,TRUE,TRUE
+Orchid,Purple,"Admiration, respect, dignity",,TRUE,TRUE
+Orchid,Yellow,"Happiness, joy, strength",,TRUE,TRUE
+Orchid,Pink,"Feminity, grace, elegance",,TRUE,TRUE
+Orchid,Red,"Strength, love, courage, respect",,TRUE,TRUE
+Orchid,Orange,"Excitement, enthusiasm, determination, appreciation, pride",,TRUE,TRUE
+Orchid,Green,"Good luck, harmony, good health, good fortune",,TRUE,TRUE
+Orchid,Blue,"Rarity, uniqueness",,TRUE,TRUE
+Orchid,Black,"Mystery, power, sophistication, strength, absolute power",,TRUE,TRUE
+Peony,White,,"Shame, shyness, apology",TRUE,FALSE
+Peony,Red,"Passion, Love",,TRUE,FALSE
+Peony,Yellow,New beginnings,,TRUE,FALSE
+Peony,Pink,"Love, friendship, happiness",,TRUE,FALSE
+Poppy,Red,,,FALSE,FALSE
+Poppy,Purple,Honor of animals lives lost in war,,FALSE,FALSE
+Poppy,Blue,"Imagination, creativity, pursuit of dreams",,FALSE,FALSE
+Poppy,Yellow,"Success, Prosperity",,FALSE,FALSE
+Poppy,White,"Pacifism, desire for peace",,FALSE,FALSE
+Poppy,"Pink, Green","Growth, new beginnings, hope, resilience.",,FALSE,FALSE
+Poppy,Orange,"Health, regeneration",,FALSE,FALSE
+Rose,Red,"Love, romance, enduring passion, respect, and the creative spirit of love",,TRUE,TRUE
+Rose,White,"Innocence, purity, loyalty, humility, young love, truth, and reverence",,TRUE,TRUE
+Rose,Pink,"Gentility, femininity, elegance, refinement, admiration, and gratitude",,TRUE,TRUE
+Rose,Yellow,"Friendship, joy, ""remember me"", ""good luck"", and ""welcome back""",,TRUE,TRUE
+Rose,Orange,"Enthusiasm, desire, passion, and excitement",,TRUE,TRUE
+Rose,Blue,Mystery,,TRUE,TRUE
+Rose,Black,,Death and transformation,TRUE,TRUE
+Rose,Lavender,"Love at first sight, enchantment, wonder, regality, and splendor",,TRUE,TRUE
+Rose,Green,Strength and fertility,,TRUE,TRUE
+Sunflower,Yellow,"happiness, joy, and positivity",,FALSE,TRUE
+Sunflower,Red,"strength, optimism, and courage",,FALSE,TRUE
+Sunflower,Orange,"energy, enthusiasm, and good fortune",,FALSE,TRUE
+Sunflower,Pink,innocence and good health,,FALSE,TRUE
+Sunflower,White,"purity, peace, and new beginnings",,FALSE,TRUE
+Sunflower,Purple,"wealth, glory, and royalty",,FALSE,TRUE
+Sweet pea,White,"Purity, innocence, peace",,FALSE,FALSE
+Sweet pea,Pink,"Joy, happiness, non-romantic love",,FALSE,FALSE
+Sweet pea,Red,"Passion, romantic love",,FALSE,FALSE
+Sweet pea,Purple,"Royalty, pride, success",,FALSE,FALSE
+Tulip,Red,"eternal love and passion, especially in new relationships",,TRUE,FALSE
+Tulip,Pink," affection, caring, good wishes, and love",,TRUE,FALSE
+Tulip,Purple,"royalty, elegance, spirituality, wisdom, and magic",,TRUE,FALSE
+Tulip,Yellow,"cheerfulness, hope, and the sun's energy",,TRUE,FALSE
+Tulip,White,"forgiveness, respect, purity, and honor",,TRUE,FALSE
+Tulip,Orange,"enthusiasm, energy, and a zest for life",,TRUE,FALSE
+Tulip,Blue,"tranquillity, serenity, and inner peace",,TRUE,FALSE
