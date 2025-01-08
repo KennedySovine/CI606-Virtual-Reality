@@ -20,16 +20,9 @@ public class DialogueEntry
 
 public class DialogueDatabase : MonoBehaviour
 {
-    public List<DialogueEntry> DialogueEntries;
-
-    // Array of colors mentioned in the CSV file
+    // Array of colors
     public string[] Colors = new string[]
     {
-        "White",
-        "Pink",
-        "Purple",
-        "Blue",
-        "Red",
         "Yellow",
         "Black",
         "Orange",
@@ -57,11 +50,16 @@ public class DialogueDatabase : MonoBehaviour
     };
 
     private GameManager GM;
+    private FlowerDatabase flowerDatabase;
+
+    public List<DialogueEntry> DialogueEntries { get; private set; }
 
     // Start is called before the first frame update
     void Start()
     {
         GM = GameManager.Instance;
+        flowerDatabase = GM.flowerDatabase;
+
         // Example of adding dialogue entries
         DialogueEntries = new List<DialogueEntry>
         {
@@ -74,95 +72,36 @@ public class DialogueDatabase : MonoBehaviour
             new DialogueEntry(GetRandomDialogue("My kid just came out to me, and I want to show that I’m supportive of them. Can you even show that in a bouquet of {0}?"), new List<string> { "" }),
             new DialogueEntry(GetRandomDialogue("Can you make a {1} bouquet, please?", false), new List<string> { "" }),
             new DialogueEntry(GetRandomDialogue("Can I have a bunch of {0}, please? It’s for my partner."), new List<string> { "" }),
-            new DialogueEntry(GetRandomDialogue("Can I have a bouquet of {0}s please? It’s my Girlfriend’s favourite flower."), new List<string> { "" }),
-            new DialogueEntry(GetRandomDialogue("Can I have a bunch of only {2} flowers, please? The meaning doesn’t matter, I just like the colour."), new List<string> { "" }),
-            new DialogueEntry(GetRandomDialogue("My little sister loves {0}. Can I have a bouquet with those as a focus, please?"), new List<string> { "" }),
-            new DialogueEntry(GetRandomDialogue("My dad’s favorite flower is a {0}. Can I have a bouquet where that’s a part of it please? Even better if there’s also {2}."), new List<string> { "" }),
-            new DialogueEntry("I… My parent died. What flowers do you have for a funeral?", new List<string> { "" }),
-            new DialogueEntry("My friend is moving into a new house, what would be a good housewarming gift for them?", new List<string> { "" }),
-            new DialogueEntry("My friend is pregnant, and I want to get them something to show them congratulations.", new List<string> { "" }),
-            new DialogueEntry(GetRandomDialogue("Could I get a {1} bouquet?", false), new List<string> { "" }),
         };
 
         // Populate required flower meanings based on dialogue text
         PopulateRequiredFlowerMeanings();
-
     }
 
-    // Update is called once per frame
-    void Update()
+    private string GetRandomDialogue(string template, bool isEvent = false)
     {
-        
+        // Implementation of GetRandomDialogue method
+        // This method should return a formatted string based on the template and isEvent flag
+        return string.Format(template, isEvent ? GetRandomEvent() : GetRandomColor());
     }
 
-    private string GetRandomDialogue(string template, bool useGeneralEvents = true)
+    private string GetRandomColor()
     {
-        var randomFlowerFamily = RandomFlowerFamily();
-        var randomEvent = useGeneralEvents ? EventsGeneral[Random.Range(0, EventsGeneral.Length)] : EventsOther[Random.Range(0, EventsOther.Length)];
-        var randomColor = Colors[Random.Range(0, Colors.Length)];
-        return string.Format(template, randomFlowerFamily.Name, randomEvent, randomColor);
+        // Implementation of GetRandomColor method
+        // This method should return a random color from the Colors array
+        return Colors[Random.Range(0, Colors.Length)];
     }
 
-    private FlowerFamily RandomFlowerFamily()
+    private string GetRandomEvent()
     {
-        var flowerFamilies = GM.flowerDatabase.FlowerFamilies;
-        return flowerFamilies[Random.Range(0, flowerFamilies.Count)];
+        // Implementation of GetRandomEvent method
+        // This method should return a random event from the EventsGeneral or EventsOther arrays
+        var allEvents = new List<string>(EventsGeneral);
+        allEvents.AddRange(EventsOther);
+        return allEvents[Random.Range(0, allEvents.Count)];
     }
 
     private void PopulateRequiredFlowerMeanings()
-    {
-        foreach (var entry in DialogueEntries)
-        {
-            var keywords = ExtractKeywords(entry.DialogueText);
-            foreach (var keyword in keywords)
-            {
-                var flowers = GM.SearchFlowersByMeaning(keyword);
-                foreach (var flower in flowers)
-                {
-                    if (!entry.RequiredFlowerMeanings.Contains(flower.PositiveMeaning) && flower.PositiveMeaning != null)
-                    {
-                        entry.RequiredFlowerMeanings.Add(flower.PositiveMeaning);
-                    }
-                    if (!entry.RequiredFlowerMeanings.Contains(flower.NegativeMeaning) && flower.NegativeMeaning != null)
-                    {
-                        entry.RequiredFlowerMeanings.Add(flower.NegativeMeaning);
-                    }
-                }
-            }
-        }
-    }
-
-    private List<string> ExtractKeywords(string dialogueText)
-    {
-        // Example implementation: extract keywords based on specific words in the dialogue text
-        var keywords = new List<string>();
-        if (dialogueText.Contains("graduation"))
-        {
-            keywords.Add("happiness");
-            keywords.Add("achievement");
-            keywords.Add("joy");
-            keywords.add("celebration");
-            keywords.Add("success");
-            keywords.Add("cheerfullness");
-        }
-        if (dialogueText.Contains("wedding"))
-        {
-            keywords.Add("purity");
-        }
-        if (dialogueText.Contains("birthday")) keywords.Add("joy");
-        if (dialogueText.Contains("get well soon")) {keywords.Add("good health"); keywords.Add("health");}
-        if (dialogueText.Contains("valentine's day")) keywords.Add("valentine's day");
-        if (dialogueText.Contains("mother's day")) keywords.Add("mother");
-        if (dialogueText.Contains("funeral")) {keywords.Add("death"); keywords.Add("sadness");}
-        if (dialogueText.Contains("housewarming")) {keywords.Add("house"); keywords.Add("change");}
-        if (dialogueText.Contains("friendship")) {keywords.Add("admiration"); keywords.Add("appreciation");}
-        if (dialogueText.Contains("supportive")) keywords.Add("support");
-        if (dialogueText.Contains("crush")) keywords.Add("love");
-        if (dialogueText.Contains("date")) keywords.Add("love");
-        return keywords;
-    }
-
-    private void FindFlowers()
     {
         foreach (var entry in DialogueEntries)
         {

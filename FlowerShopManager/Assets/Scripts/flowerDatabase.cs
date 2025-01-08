@@ -32,13 +32,13 @@ public class FlowerFamily
     }
 }
 
-public class FlowerInit
+public class FlowerDatabase
 {
-    public List<FlowerFamily> FlowerDatabase { get; private set; }
+    public List<FlowerFamily> FlowerFamilies { get; private set; }
 
-    public FlowerInit()
+    public FlowerDatabase()
     {
-        FlowerDatabase = new List<FlowerFamily>();
+        FlowerFamilies = new List<FlowerFamily>();
     }
 
     public void LoadFromCsv(string filePath)
@@ -53,23 +53,22 @@ public class FlowerInit
                 var line = reader.ReadLine();
                 var values = line.Split(',');
 
-                var flowerFamilyName = values[0];
-                var flower = new Flower(
-                    values[1], // Color
-                    values[2], // Positive Meaning
-                    values[3], // Negative Meaning
-                    bool.Parse(values[4]), // Hypoallergenic
-                    bool.Parse(values[5]) // PetSafe
-                );
+                var familyName = values[0];
+                var color = values[1];
+                var positiveMeaning = values[2];
+                var negativeMeaning = values[3];
+                var hypoallergenic = bool.Parse(values[4]);
+                var petSafe = bool.Parse(values[5]);
 
-                var flowerFamily = FlowerDatabase.Find(f => f.Name == flowerFamilyName);
-                if (flowerFamily == null)
+                var flower = new Flower(color, positiveMeaning, negativeMeaning, hypoallergenic, petSafe);
+
+                var family = FlowerFamilies.Find(f => f.Name == familyName);
+                if (family == null)
                 {
-                    flowerFamily = new FlowerFamily(flowerFamilyName);
-                    FlowerDatabase.Add(flowerFamily);
+                    family = new FlowerFamily(familyName);
+                    FlowerFamilies.Add(family);
                 }
-
-                flowerFamily.FlowersInFamily.Add(flower);
+                family.FlowersInFamily.Add(flower);
             }
         }
     }

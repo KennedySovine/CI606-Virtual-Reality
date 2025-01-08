@@ -1,14 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
     public string csvFilePath = "Assets/Scripts/Flowers - Sheet1.csv";
-    public FlowerDatabase flowerDatabase;
+    public List<FlowerFamily> FlowerData => flowerDatabase.FlowerFamilies;
+
+    public FlowerDatabase flowerDatabase { get; private set; }
 
     private void Awake()
     {
@@ -91,7 +92,7 @@ public class GameManager : MonoBehaviour
         var flowersByHypoallergenic = SearchFlowersByHypoallergenic(hypoallergenic);
         var flowersByPetSafe = SearchFlowersByPetSafe(petSafe);
         var flowersByMeanings = meanings.SelectMany(SearchFlowersByMeaning).Distinct().ToList();
-
+    
         var allFlowers = flowersByColor
             .Union(flowersByType)
             .Union(flowersByHypoallergenic)
@@ -99,7 +100,7 @@ public class GameManager : MonoBehaviour
             .Union(flowersByMeanings)
             .Distinct()
             .ToList();
-
+    
         var rankedFlowers = allFlowers
             .Select(flower => new
             {
@@ -111,11 +112,11 @@ public class GameManager : MonoBehaviour
                         (flowersByMeanings.Contains(flower) ? 1 : 0)
             })
             .OrderByDescending(f => f.Score)
-            .ThenBy(f => f.Flower.Name)
+            .ThenBy(f => flowerDatabase.FlowerFamilies.First(family => family.FlowersInFamily.Contains(f.Flower)).Name)
             .Take(5)
             .Select(f => f.Flower)
             .ToList();
-
+    
         return rankedFlowers;
     }
 }
