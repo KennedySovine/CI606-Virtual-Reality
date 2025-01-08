@@ -2142,10 +2142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43288450ab244c4fb340543bfb4d3a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleText: {fileID: 0}
-  description: {fileID: 0}
-  dogIcon: {fileID: 0}
-  hypoallergenicIcon: {fileID: 0}
+  titleText: {fileID: 1114956168}
+  description: {fileID: 713079573}
+  dogIcon: {fileID: 1803580294}
+  hypoallergenicIcon: {fileID: 247431150}
 --- !u!1001 &500365884
 PrefabInstance:
   m_ObjectHideFlags: 0

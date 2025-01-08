@@ -36,8 +36,14 @@ public class FlowerTabletManager : MonoBehaviour
 //No button but oh well
     public void SetTitleText(string newText)
     {
-        if (titleText == "NULL"){
-
+        if (titleText != null && string.IsNullOrEmpty(titleText.text))
+        {
+            // The text itself is null or empty
+            Debug.LogWarning("titleText.text is null or empty. Cannot set text.");
+        }
+        else
+        {
+            titleText.text = newText;
         }
     }
 
